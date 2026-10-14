@@ -1,0 +1,8 @@
+libsmb2.source=https://github.com/sahlberg/libsmb2.git
+libsmb2.version=libsmb2-6.2
+libsmb2.revision=d67e213a5c4e7e4969fd81f0b95e4ca5831fbba1
+libsmb2.modified=false
+libnfs.source=https://github.com/sahlberg/libnfs.git
+libnfs.version=libnfs-6.0.2
+libnfs.revision=18c5c73ee88bb7dc8da0d55dc95164bb77e49dc6
+libnfs.modified=false

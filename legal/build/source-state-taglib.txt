@@ -1,0 +1,11 @@
+taglib.source=https://github.com/taglib/taglib.git
+taglib.version=v2.3.2
+taglib.revision=deadc2990767dfbda0701e0ab35fdeea653db08f
+taglib.modified=false
+taglib.license=MPL-1.1 (elected from MPL-1.1 / LGPL-2.1)
+taglib.build_options=BUILD_SHARED_LIBS=OFF BUILD_TESTING=OFF BUILD_EXAMPLES=OFF BUILD_BINDINGS=OFF WITH_ZLIB=ON WITH_MOD=OFF WITH_SHORTEN=OFF CMAKE_POSITION_INDEPENDENT_CODE=ON
+utfcpp.source=https://github.com/nemtrif/utfcpp.git
+utfcpp.version=v4.2.0
+utfcpp.revision=2d8e20b22dcb3e9b3c4f52103182ebda949c6089
+utfcpp.modified=false
+utfcpp.license=BSL-1.0

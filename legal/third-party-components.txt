@@ -1,0 +1,128 @@
+Otter Player Third-Party Software Notices
+Last reviewed: 2026-10-01
+
+Otter Player includes third-party open source software. Copyright notices and license
+texts are reproduced below. These licenses apply only to the identified
+third-party components, not to Otter Player as a whole.
+
+LGPL corresponding source and relinking materials
+-------------------------------------------------
+
+Otter Player statically links FFmpeg, libsmb2, and libnfs. The distributor will
+provide, upon request, the complete corresponding source code, build scripts,
+recorded build configuration, application object files, and relinking
+instructions corresponding to the exact Otter Player version received. The charge,
+if any, will not exceed the reasonable cost of physically performing this
+distribution. This written offer remains valid for at least three years after
+the distributor's last distribution of that Otter Player version.
+
+To request the materials, use the developer support contact or support URL
+provided with your copy of Otter Player, including the App Store product page, and
+identify the Otter Player version and build number shown in Settings.
+
+You may modify the LGPL-covered libraries for your own use and reverse engineer
+Otter Player when, and only to the extent, necessary to debug those library
+modifications, as provided by the GNU Lesser General Public License version 2.1.
+
+FFmpeg
+------
+
+Version: n7.1.4 (commit 9abe92e3af7fa7becc8f7f742b1457b4c28220a6)
+Source: https://github.com/FFmpeg/FFmpeg/tree/n7.1.4
+License: GNU Lesser General Public License version 2.1 or later
+Linkage: Static
+Modifications: No source modifications. The build is configured by
+Scripts/build_ffmpeg_ios.sh with GPL, nonfree, version3, libsmbclient, OpenSSL,
+x264, and x265 disabled.
+
+This software uses code of FFmpeg licensed under the LGPLv2.1 and its source can
+be downloaded from the source URL above. The exact corresponding source and
+relinking materials for the shipped Otter Player binary are available under the
+written offer above.
+
+libsmb2
+-------
+
+Version: libsmb2-6.2 (commit d67e213a5c4e7e4969fd81f0b95e4ca5831fbba1)
+Source: https://github.com/sahlberg/libsmb2/tree/libsmb2-6.2
+License for the library and headers: GNU Lesser General Public License version
+2.1 or later
+Linkage: Static
+Modifications: No source modifications. Examples and tests are not built.
+
+libnfs
+------
+
+Version: libnfs-6.0.2 (commit 18c5c73ee88bb7dc8da0d55dc95164bb77e49dc6)
+Source: https://github.com/sahlberg/libnfs/tree/libnfs-6.0.2
+License for the library and headers: GNU Lesser General Public License version
+2.1 or later
+License for protocol definitions and generated RPC files: BSD 2-Clause
+Linkage: Static
+Modifications: No source modifications. Examples, tests, and utilities are not
+built or distributed.
+
+pupnp
+-----
+
+Version: 22.0.4 (commit 4145da68112f61660c8e55ed61fae1bb07d0e3d8)
+Source: https://github.com/pupnp/pupnp/tree/release-22.0.4
+License: BSD 3-Clause
+Linkage: Static
+Modifications: Scripts/build_pupnp_ios.sh normalizes one CMake generator
+expression in a temporary source copy for CMake 4 compatibility. Library C
+sources are unmodified. Samples, tests, device APIs, GENA, and the web server
+are not built into Otter Player.
+
+TagLib
+------
+
+Version: TagLib 2.3.2 (commit deadc2990767dfbda0701e0ab35fdeea653db08f)
+Source: https://github.com/taglib/taglib/tree/v2.3.2
+License: Mozilla Public License version 1.1 (elected from the MPL-1.1 /
+LGPL-2.1 dual license offered by the TagLib project)
+Linkage: Static
+Modifications: No source modifications. The build is configured by
+Scripts/build_taglib_ios.sh with shared libraries, tests, examples, bindings,
+MOD, and Shorten disabled.
+
+TagLib is used to read and write audio file metadata tags. Metadata values
+written by the app are ordinary tag fields; no TagLib source is modified, and
+the complete MPL-1.1 source of the exact revision above is included in the
+published compliance materials. The alternative LGPL-2.1 option offered by the
+project is the same license text reproduced above for FFmpeg, so only the
+elected MPL-1.1 text is reproduced below.
+
+utfcpp
+------
+
+Version: utfcpp 4.2.0 (commit 2d8e20b22dcb3e9b3c4f52103182ebda949c6089)
+Source: https://github.com/nemtrif/utfcpp/tree/v4.2.0
+License: Boost Software License 1.0
+Linkage: Header-only, compiled into the statically linked libtag
+Modifications: No source modifications. The copy bundled in TagLib's 3rdparty
+directory is used.
+
+SwiftNIO and dependencies
+-------------------------
+
+SwiftNIO 2.99.0
+Source: https://github.com/apple/swift-nio/tree/2.99.0
+License: Apache License 2.0
+
+Swift Atomics 1.3.0
+Source: https://github.com/apple/swift-atomics/tree/1.3.0
+License: Apache License 2.0 with Runtime Library Exception
+
+Swift Collections 1.4.1
+Source: https://github.com/apple/swift-collections/tree/1.4.1
+License: Apache License 2.0 with Runtime Library Exception
+
+Swift System 1.6.4
+Source: https://github.com/apple/swift-system/tree/1.6.4
+License: Apache License 2.0 with Runtime Library Exception
+
+SwiftNIO's NOTICE identifies incorporated or derived material from Netty,
+Node.js llhttp, uSHET, FreeBSD, swift-extras Base64, AsyncHTTPClient,
+SwiftCertificates, Swift System, and Swift Package Manager. Its NOTICE and the
+applicable MIT, BSD, and Apache license texts are reproduced below.

@@ -1,0 +1,4 @@
+source=https://github.com/pupnp/pupnp.git
+revision=4145da68112f61660c8e55ed61fae1bb07d0e3d8
+version=22.0.4
+deployment_target=16.0

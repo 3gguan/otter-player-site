@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" data-lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Otter Player 开源许可 / Open Source Licenses</title>
+<meta name="description" content="Otter Player 第三方开源软件声明与许可证全文，以及 FFmpeg / libsmb2 / libnfs 的 LGPL 对应源码链接。">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" type="image/png" sizes="48x48" href="../assets/favicon-48.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <img class="mark" src="../assets/app-icon-192.png" width="62" height="62" alt="" decoding="async">
+    <div>
+      <h1>Otter Player</h1>
+      <p>
+        <span data-lang-block="zh-Hans">开源许可</span>
+        <span data-lang-block="zh-Hant">開源授權</span>
+        <span data-lang-block="en">Open Source Licenses</span>
+        <span data-lang-block="ja">オープンソースライセンス</span>
+      </p>
+    </div>
+    <nav class="langs" aria-label="Language">
+      <button type="button" data-set-lang="zh-Hans">简体</button>
+      <button type="button" data-set-lang="zh-Hant">繁體</button>
+      <button type="button" data-set-lang="en">EN</button>
+      <button type="button" data-set-lang="ja">日本語</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ 说明 ============ -->
+  <section>
+    <div class="card">
+      <div data-lang-block="zh-Hans">
+        <p>本页提供 Otter Player 所用第三方开源软件的版权声明与许可证全文。这些许可证仅适用于下列第三方组件，不适用于 Otter Player 整体。</p>
+        <p class="note">各许可证文本文件可直接点击打开，也可用同目录下的 <code>LICENSE_SHA256SUMS</code> 校验其完整性。</p>
+      </div>
+      <div data-lang-block="zh-Hant">
+        <p>本頁提供 Otter Player 所用第三方開源軟體的著作權聲明與授權條款全文。這些授權僅適用於下列第三方元件，不適用於 Otter Player 整體。</p>
+        <p class="note">各授權條款檔案可直接點開，也可用同目錄下的 <code>LICENSE_SHA256SUMS</code> 校驗其完整性。</p>
+      </div>
+      <div data-lang-block="en">
+        <p>This page provides the copyright notices and full license texts for the third-party open source software used by Otter Player. These licenses apply only to the identified third-party components, not to Otter Player as a whole.</p>
+        <p class="note">Each license text opens directly in your browser. You can verify the published texts against <code>LICENSE_SHA256SUMS</code> in the same directory.</p>
+      </div>
+      <div data-lang-block="ja">
+        <p>このページでは、Otter Player が使用しているサードパーティ製オープンソースソフトウェアの著作権表示とライセンス全文を掲載しています。これらのライセンスは記載されたコンポーネントのみに適用され、Otter Player 全体には適用されません。</p>
+        <p class="note">ライセンス全文は直接開くことができます。同じディレクトリの <code>LICENSE_SHA256SUMS</code> で内容を検証できます。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 第三方组件 ============ -->
+  <section>
+    <h2>
+      <span data-lang-block="zh-Hans">第三方组件</span>
+      <span data-lang-block="zh-Hant">第三方元件</span>
+      <span data-lang-block="en">Third-Party Components</span>
+      <span data-lang-block="ja">サードパーティコンポーネント</span>
+    </h2>
+    <div class="card">
+      <div data-lang-block="zh-Hans">
+        <p>其中标注 LGPL 的组件以<b>静态链接</b>方式使用。</p>
+      </div>
+      <div data-lang-block="zh-Hant">
+        <p>其中標註 LGPL 的元件以<b>靜態連結</b>方式使用。</p>
+      </div>
+      <div data-lang-block="en">
+        <p>The components marked LGPL are used as <b>static links</b>.</p>
+      </div>
+      <div data-lang-block="ja">
+        <p>LGPL と記載されたコンポーネントは<b>静的リンク</b>で使用しています。</p>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Component</th>
+            <th>Version</th>
+            <th>License</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>FFmpeg</td><td>n7.1.4</td><td>LGPL-2.1-or-later</td></tr>
+          <tr><td>libsmb2</td><td>6.2</td><td>LGPL-2.1-or-later</td></tr>
+          <tr><td>libnfs</td><td>6.0.2</td><td>LGPL-2.1-or-later / BSD-2-Clause</td></tr>
+          <tr><td>pupnp</td><td>22.0.4</td><td>BSD-3-Clause</td></tr>
+          <tr><td>TagLib</td><td>2.3.2</td><td>MPL-1.1</td></tr>
+          <tr><td>utfcpp</td><td>4.2.0</td><td>BSL-1.0</td></tr>
+          <tr><td>SwiftNIO</td><td>2.99.0</td><td>Apache-2.0</td></tr>
+          <tr><td>Swift Atomics</td><td>1.3.0</td><td>Apache-2.0 (Runtime Library Exception)</td></tr>
+          <tr><td>Swift Collections</td><td>1.4.1</td><td>Apache-2.0 (Runtime Library Exception)</td></tr>
+          <tr><td>Swift System</td><td>1.6.4</td><td>Apache-2.0 (Runtime Library Exception)</td></tr>
+        </tbody>
+      </table>
+
+      <div data-lang-block="zh-Hans">
+        <p class="note">完整的组件清单、版本、commit 与链接方式见 <a href="third-party-components.txt">third-party-components.txt</a>。</p>
+      </div>
+      <div data-lang-block="zh-Hant">
+        <p class="note">完整的元件清單、版本、commit 與連結方式見 <a href="third-party-components.txt">third-party-components.txt</a>。</p>
+      </div>
+      <div data-lang-block="en">
+        <p class="note">The full component list — versions, commits and linkage — is in <a href="third-party-components.txt">third-party-components.txt</a>.</p>
+      </div>
+      <div data-lang-block="ja">
+        <p class="note">コンポーネントの完全な一覧（バージョン、commit、リンク方式）は <a href="third-party-components.txt">third-party-components.txt</a> をご覧ください。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 许可证全文 ============ -->
+  <section>
+    <h2>
+      <span data-lang-block="zh-Hans">许可证全文</span>
+      <span data-lang-block="zh-Hant">授權條款全文</span>
+      <span data-lang-block="en">Full License Texts</span>
+      <span data-lang-block="ja">ライセンス全文</span>
+    </h2>
+    <div class="card">
+      <ul>
+        <li><a href="licenses/LGPL-2.1.txt">GNU Lesser General Public License 2.1</a> — FFmpeg / libsmb2 / libnfs</li>
+        <li><a href="licenses/FFmpeg-LICENSE.md">FFmpeg-LICENSE.md</a></li>
+        <li><a href="licenses/libsmb2-COPYING.txt">libsmb2-COPYING.txt</a></li>
+        <li><a href="licenses/libnfs-COPYING.txt">libnfs-COPYING.txt</a></li>
+        <li><a href="licenses/libnfs-BSD-2-Clause.txt">libnfs-BSD-2-Clause.txt</a></li>
+        <li><a href="licenses/pupnp-BSD-3-Clause.txt">pupnp-BSD-3-Clause.txt</a></li>
+        <li><a href="licenses/taglib-COPYING.MPL.txt">taglib-COPYING.MPL.txt</a> (MPL-1.1)</li>
+        <li><a href="licenses/taglib-COPYING.LGPL.txt">taglib-COPYING.LGPL.txt</a> (LGPL-2.1)</li>
+        <li><a href="licenses/utfcpp-LICENSE.txt">utfcpp-LICENSE.txt</a></li>
+        <li><a href="licenses/swift-nio-LICENSE.txt">swift-nio-LICENSE.txt</a></li>
+        <li><a href="licenses/swift-nio-NOTICE.txt">swift-nio-NOTICE.txt</a></li>
+        <li><a href="licenses/swift-nio-llhttp-MIT.txt">swift-nio-llhttp-MIT.txt</a></li>
+        <li><a href="licenses/swift-nio-uSHET-MIT.txt">swift-nio-uSHET-MIT.txt</a></li>
+        <li><a href="licenses/swift-nio-FreeBSD-SHA1-BSD-3-Clause.txt">swift-nio-FreeBSD-SHA1-BSD-3-Clause.txt</a></li>
+        <li><a href="licenses/swift-atomics-LICENSE.txt">swift-atomics-LICENSE.txt</a></li>
+        <li><a href="licenses/swift-collections-LICENSE.txt">swift-collections-LICENSE.txt</a></li>
+        <li><a href="licenses/swift-system-LICENSE.txt">swift-system-LICENSE.txt</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 完整声明 ============ -->
+  <section>
+    <h2>
+      <span data-lang-block="zh-Hans">完整第三方声明</span>
+      <span data-lang-block="zh-Hant">完整第三方聲明</span>
+      <span data-lang-block="en">Complete Third-Party Notices</span>
+      <span data-lang-block="ja">サードパーティに関する完全な表示</span>
+    </h2>
+    <div class="card">
+      <div data-lang-block="zh-Hans">
+        <p>版权声明与上述全部许可证文本汇总在一个文件中：</p>
+      </div>
+      <div data-lang-block="zh-Hant">
+        <p>著作權聲明與上述全部授權條款全文彙整於一個檔案中：</p>
+      </div>
+      <div data-lang-block="en">
+        <p>All copyright notices and license texts above are collected in a single file:</p>
+      </div>
+      <div data-lang-block="ja">
+        <p>著作権表示と上記すべてのライセンス全文を 1 つのファイルにまとめたものです：</p>
+      </div>
+      <ul>
+        <li><a href="third-party-notices.txt">third-party-notices.txt</a></li>
+        <li><a href="LICENSE_SHA256SUMS">LICENSE_SHA256SUMS</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ LGPL 源码 ============ -->
+  <section>
+    <h2>
+      <span data-lang-block="zh-Hans">LGPL 源码</span>
+      <span data-lang-block="zh-Hant">LGPL 原始碼</span>
+      <span data-lang-block="en">LGPL Source</span>
+      <span data-lang-block="ja">LGPL ソース</span>
+    </h2>
+    <div class="card">
+      <div data-lang-block="zh-Hans">
+        <p>FFmpeg、libsmb2 与 libnfs 以 GNU 宽通用公共许可证（LGPL）第 2.1 版或更高版本授权，并以静态链接方式使用。您可以为了调试对这些库的修改而反向工程本应用，范围以 LGPL 第 2.1 版的规定为限。</p>
+      </div>
+      <div data-lang-block="zh-Hant">
+        <p>FFmpeg、libsmb2 與 libnfs 以 GNU 寬通用公共許可證（LGPL）第 2.1 版或更高版本授權，並以靜態連結方式使用。您可以為了偵錯對這些函式庫的修改而反向工程本應用程式，範圍以 LGPL 第 2.1 版的規定為限。</p>
+      </div>
+      <div data-lang-block="en">
+        <p>FFmpeg, libsmb2 and libnfs are licensed under the GNU Lesser General Public License version 2.1 or later and are used as static links. You may reverse engineer this app when, and only to the extent, necessary to debug modifications to those libraries, as provided by LGPL version 2.1.</p>
+      </div>
+      <div data-lang-block="ja">
+        <p>FFmpeg、libsmb2、libnfs は GNU劣等一般公衆利用許諾書（LGPL）バージョン 2.1 以降でライセンスされ、静的リンクで使用しています。これらのライブラリへの改変をデバッグするために必要な範囲に限り、LGPL バージョン 2.1 の定めるところにより本アプリをリバースエンジニアリングすることができます。</p>
+      </div>
+
+      <div data-lang-block="zh-Hans">
+        <p class="note"><b>对应源码：</b>以下链接指向各组件在本次发布中实际使用的版本（官方仓库），可直接查阅与下载。</p>
+      </div>
+      <div data-lang-block="zh-Hant">
+        <p class="note"><b>對應原始碼：</b>以下連結指向各元件在本次發布中實際使用的版本（官方倉庫），可直接查閱與下載。</p>
+      </div>
+      <div data-lang-block="en">
+        <p class="note"><b>Corresponding source:</b> the links below point to the exact revisions actually used in this release, in the official repositories; they can be browsed and downloaded directly.</p>
+      </div>
+      <div data-lang-block="ja">
+        <p class="note"><b>対応するソース：</b>以下のリンクは、本リリースで実際に使用したリビジョンの公式リポジトリを指します。そのまま閲覧・ダウンロードできます。</p>
+      </div>
+
+      <ul>
+        <li>FFmpeg n7.1.4 — <a href="https://github.com/FFmpeg/FFmpeg/tree/9abe92e3af7fa7becc8f7f742b1457b4c28220a6">9abe92e3</a></li>
+        <li>libsmb2 6.2 — <a href="https://github.com/sahlberg/libsmb2/tree/d67e213a5c4e7e4969fd81f0b95e4ca5831fbba1">d67e213a</a></li>
+        <li>libnfs 6.0.2 — <a href="https://github.com/sahlberg/libnfs/tree/18c5c73ee88bb7dc8da0d55dc95164bb77e49dc6">18c5c73e</a></li>
+        <li>TagLib 2.3.2 — <a href="https://github.com/taglib/taglib/tree/deadc2990767dfbda0701e0ab35fdeea653db08f">deadc299</a></li>
+        <li>utfcpp 4.2.0 — <a href="https://github.com/nemtrif/utfcpp/tree/2d8e20b22dcb3e9b3c4f52103182ebda949c6089">2d8e20b2</a></li>
+        <li>pupnp 22.0.4 — <a href="https://github.com/pupnp/pupnp/tree/4145da68112f61660c8e55ed61fae1bb07d0e3d8">4145da68</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 构建脚本与构建配置 ============ -->
+  <section>
+    <h2>
+      <span data-lang-block="zh-Hans">构建脚本与构建配置</span>
+      <span data-lang-block="zh-Hant">建置腳本與建置設定</span>
+      <span data-lang-block="en">Build Scripts &amp; Configuration</span>
+      <span data-lang-block="ja">ビルドスクリプトとビルド設定</span>
+    </h2>
+    <div class="card">
+      <div data-lang-block="zh-Hans">
+        <p class="note">以下脚本与配置记录用于构建 Otter Player 所包含的第三方库。脚本中包含各库实际使用的配置参数，可据此复现同一构建。</p>
+      </div>
+      <div data-lang-block="zh-Hant">
+        <p class="note">以下腳本與設定記錄用於建置 Otter Player 所包含的第三方函式庫。腳本中包含各函式庫實際使用的設定參數，可據此重現同一建置。</p>
+      </div>
+      <div data-lang-block="en">
+        <p class="note">The scripts and configuration records below are used to build the third-party libraries included in Otter Player. They contain the configuration options actually used, and can be used to reproduce the same build.</p>
+      </div>
+      <div data-lang-block="ja">
+        <p class="note">以下のスクリプトと設定記録は、Otter Player に含まれるサードパーティライブラリのビルドに使用したものです。実際に使用した設定オプションが含まれており、同じビルドを再現できます。</p>
+      </div>
+      <ul>
+        <li><a href="build/build_ffmpeg_ios.sh">build_ffmpeg_ios.sh</a></li>
+        <li><a href="build/build_network_libraries_ios.sh">build_network_libraries_ios.sh</a> — libsmb2 / libnfs</li>
+        <li><a href="build/build_taglib_ios.sh">build_taglib_ios.sh</a> — TagLib / utfcpp</li>
+        <li><a href="build/build_pupnp_ios.sh">build_pupnp_ios.sh</a></li>
+        <li><a href="build/source-state-ffmpeg.txt">source-state-ffmpeg.txt</a></li>
+        <li><a href="build/source-state-network-libraries.txt">source-state-network-libraries.txt</a></li>
+        <li><a href="build/source-state-taglib.txt">source-state-taglib.txt</a></li>
+        <li><a href="build/source-state-pupnp.txt">source-state-pupnp.txt</a></li>
+        <li><a href="build/check_third_party_compliance.sh">check_third_party_compliance.sh</a></li>
+        <li><a href="build/generate_third_party_notices.sh">generate_third_party_notices.sh</a></li>
+        <li><a href="build/create_lgpl_release_bundle.sh">create_lgpl_release_bundle.sh</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>
+      <a href="../index.html">
+        <span data-lang-block="zh-Hans">技术支持</span>
+        <span data-lang-block="zh-Hant">技術支援</span>
+        <span data-lang-block="en">Support</span>
+        <span data-lang-block="ja">サポート</span>
+      </a>
+      &nbsp;·&nbsp;
+      <a href="../privacy.html">
+        <span data-lang-block="zh-Hans">隐私政策</span>
+        <span data-lang-block="zh-Hant">隱私權政策</span>
+        <span data-lang-block="en">Privacy Policy</span>
+        <span data-lang-block="ja">プライバシーポリシー</span>
+      </a>
+      &nbsp;·&nbsp;
+      <span data-lang-block="zh-Hans">最后更新：2026 年 10 月 14 日</span>
+      <span data-lang-block="zh-Hant">最後更新：2026 年 10 月 14 日</span>
+      <span data-lang-block="en">Last updated: October 14, 2026</span>
+      <span data-lang-block="ja">最終更新：2026 年 10 月 14 日</span>
+    </p>
+    <p>© 2026 管日臻 · Otter Player</p>
+  </div>
+</footer>
+
+<script src="../assets/lang.js"></script>
+</body>
+</html>

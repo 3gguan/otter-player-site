@@ -1,0 +1,153 @@
+/* Otter Player — support site styles */
+
+:root {
+  --brand: #ff7a00;
+  --brand-dark: #d95f00;
+  --bg: #ffffff;
+  --bg-soft: #fdf6f0;
+  --card: #ffffff;
+  --text: #1c1a17;
+  --text-soft: #6b6560;
+  --line: #eae2da;
+  --radius: 14px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16130f;
+    --bg-soft: #1e1a15;
+    --card: #221d17;
+    --text: #f2ece5;
+    --text-soft: #a49b91;
+    --line: #332b23;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.75 -apple-system, BlinkMacSystemFont, "SF Pro SC", "SF Pro Text",
+        "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC",
+        "Helvetica Neue", Arial, sans-serif;
+}
+
+.wrap { max-width: 780px; margin: 0 auto; padding: 0 22px; }
+
+/* ---------- header ---------- */
+
+.hero {
+  background: linear-gradient(140deg, #ff9a2b 0%, #e2570a 100%);
+  color: #fff;
+  padding: 46px 0 40px;
+  margin-bottom: 34px;
+}
+
+.hero .wrap { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+
+.hero .mark {
+  width: 62px; height: 62px; border-radius: 15px; flex: 0 0 auto;
+  display: block; object-fit: cover;
+}
+
+.hero h1 { margin: 0; font-size: 25px; font-weight: 700; letter-spacing: .3px; }
+.hero p  { margin: 3px 0 0; font-size: 14px; opacity: .9; }
+
+/* ---------- language switch ---------- */
+
+.langs { margin-left: auto; display: flex; gap: 4px; }
+
+.langs button {
+  appearance: none; cursor: pointer;
+  background: rgba(255, 255, 255, .14);
+  border: 1px solid rgba(255, 255, 255, .3);
+  color: #fff; font: inherit; font-size: 13px;
+  padding: 5px 11px; border-radius: 999px;
+  transition: background .15s;
+}
+
+.langs button:hover { background: rgba(255, 255, 255, .28); }
+.langs button[aria-pressed="true"] { background: #fff; color: var(--brand-dark); font-weight: 600; }
+
+/* ---------- sections ---------- */
+
+section { margin: 0 0 30px; }
+
+h2 {
+  font-size: 18px; font-weight: 700; margin: 0 0 12px;
+  padding-left: 12px; border-left: 4px solid var(--brand); line-height: 1.3;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+}
+
+.card > :first-child { margin-top: 0; }
+.card > :last-child  { margin-bottom: 0; }
+
+ul { margin: 10px 0; padding-left: 20px; }
+li { margin: 9px 0; }
+li strong { font-weight: 600; }
+
+a { color: var(--brand-dark); text-decoration: none; border-bottom: 1px solid rgba(217, 95, 0, .35); }
+a:hover { border-bottom-color: currentColor; }
+
+@media (prefers-color-scheme: dark) {
+  a { color: #ffa04d; border-bottom-color: rgba(255, 160, 77, .38); }
+}
+
+code {
+  background: var(--bg-soft); border: 1px solid var(--line);
+  border-radius: 5px; padding: 1px 6px; font-size: .9em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.mail {
+  display: inline-block; font-size: 19px; font-weight: 600;
+  letter-spacing: .2px; word-break: break-all;
+}
+
+.note { color: var(--text-soft); font-size: 14px; }
+
+/* ---------- table ---------- */
+
+table { width: 100%; border-collapse: collapse; margin: 12px 0 4px; font-size: 14px; }
+th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); }
+th { color: var(--text-soft); font-weight: 600; white-space: nowrap; }
+tr:last-child td { border-bottom: none; }
+
+/* ---------- footer ---------- */
+
+footer {
+  border-top: 1px solid var(--line);
+  margin-top: 44px; padding: 22px 0 40px;
+  color: var(--text-soft); font-size: 13px;
+}
+
+footer a { color: inherit; }
+
+/* ---------- i18n ---------- */
+
+[data-lang-block] { display: none; }
+
+html[data-lang="zh-Hans"] [data-lang-block="zh-Hans"],
+html[data-lang="zh-Hant"] [data-lang-block="zh-Hant"],
+html[data-lang="en"]      [data-lang-block="en"],
+html[data-lang="ja"]      [data-lang-block="ja"] { display: block; }
+
+html[data-lang="zh-Hans"] span[data-lang-block="zh-Hans"],
+html[data-lang="zh-Hant"] span[data-lang-block="zh-Hant"],
+html[data-lang="en"]      span[data-lang-block="en"],
+html[data-lang="ja"]      span[data-lang-block="ja"] { display: inline; }
+
+@media print {
+  .hero { background: #fff; color: #000; }
+  .langs { display: none; }
+}
