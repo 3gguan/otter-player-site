@@ -259,16 +259,16 @@
       </table>
 
       <div data-lang-block="zh-Hans">
-        <p>Flite 仅用于歌词里的<b>英文读音</b>（把英文单词转成音标），只编译其中的 text-to-phoneme 部分：不包含语音包，也不提供语音合成入口。日文与中文的注音不使用 Flite。</p>
+        <p>Flite 仅用于歌词里的<b>英文读音</b>（把英文单词转成音标），只编译其中的 text-to-phoneme 部分：不包含语音包，也不提供语音合成入口。其它语言（日文、中文、韩文等）的注音由系统分词器与自实现完成，不使用 Flite。</p>
       </div>
       <div data-lang-block="zh-Hant">
-        <p>Flite 僅用於歌詞中的<b>英文讀音</b>（將英文單字轉為音標），只編譯其中的 text-to-phoneme 部分：不包含語音包，也不提供語音合成入口。日文與中文的注音不使用 Flite。</p>
+        <p>Flite 僅用於歌詞中的<b>英文讀音</b>（將英文單字轉為音標），只編譯其中的 text-to-phoneme 部分：不包含語音包，也不提供語音合成入口。其它語言（日文、中文、韓文等）的注音由系統分詞器與自實作完成，不使用 Flite。</p>
       </div>
       <div data-lang-block="en">
-        <p>Flite is used only to convert <b>English words</b> to IPA for lyric pronunciation; only its text-to-phoneme component is compiled in. No voice data is included and there is no speech synthesis entry point. Japanese and Chinese romanization do not use Flite.</p>
+        <p>Flite is used only to convert <b>English words</b> to IPA for lyric pronunciation; only its text-to-phoneme component is compiled in. No voice data is included and there is no speech synthesis entry point. Romanization for every other language (Japanese, Chinese, Korean) is produced by the system tokenizer and our own implementation, and does not use Flite.</p>
       </div>
       <div data-lang-block="ja">
-        <p>Flite は歌詞の<b>英語の読み</b>（英単語を発音記号に変換）にのみ使用しています。text-to-phoneme 部分のみを組み込んでおり、音声データは含まず、音声合成の入口もありません。日本語・中国語の読みには Flite を使用していません。</p>
+        <p>Flite は歌詞の<b>英語の読み</b>（英単語を発音記号に変換）にのみ使用しています。text-to-phoneme 部分のみを組み込んでおり、音声データは含まず、音声合成の入口もありません。その他の言語（日本語・中国語・韓国語など）の読みは、システムのトークナイザと独自実装で処理しており、Flite は使用していません。</p>
       </div>
 
       <div data-lang-block="zh-Hans">
