@@ -131,6 +131,8 @@
           <li><b>网络源连不上？</b> 确认手机与服务器在同一个局域网，并检查地址、用户名和密码。</li>
           <li><b>封面不显示？</b> 封面取自音乐文件内嵌的图片，文件里没有内嵌封面时不会显示。</li>
           <li><b>歌词不显示？</b> 把歌词文件放到音乐文件所在的文件夹并保持同名，扩展名用 lrc、ttml 或 qrc 等。</li>
+          <li><b>能不能自动获取歌词？</b> 可以：在「设置 → 歌词 → 在线歌词」开启。开启后，只有在既没有内嵌歌词、同目录也没有歌词文件时，才会用歌名、歌手、专辑和时长向 <a href="https://lrclib.net" rel="noopener">lrclib.net</a> 查询纯文本歌词。该开关默认关闭，只发送上述几项元数据，不会上传音频；查到的歌词缓存在本机，之后离线也能看。在线歌词数据由 LRCLIB 提供。</li>
+          <li><b>歌词发音和翻译？</b> 发音（假名、拼音等）在本机计算，不需要联网。翻译需要你在「设置 → 歌词 → AI 歌词翻译」里自行填写一个兼容的翻译服务地址；留空时该功能不会发起任何请求。</li>
           <li><b>播放没有声音？</b> 检查是否连了蓝牙设备，或试听其它歌曲确认音频文件本身是否正常。</li>
         </ul>
       </div>
@@ -140,6 +142,8 @@
           <li><b>網路來源連不上？</b> 確認手機與伺服器在同一個區域網路，並檢查位址、使用者名稱和密碼。</li>
           <li><b>封面不顯示？</b> 封面取自音樂檔案內嵌的圖片，檔案裡沒有內嵌封面時不會顯示。</li>
           <li><b>歌詞不顯示？</b> 把歌詞檔案放到音樂檔案所在的資料夾並保持同名，副檔名用 lrc、ttml 或 qrc 等。</li>
+          <li><b>能不能自動取得歌詞？</b> 可以：在「設定 → 歌詞 → 線上歌詞」開啟。開啟後，只有在既沒有內嵌歌詞、同資料夾也沒有歌詞檔案時，才會用歌名、演出者、專輯和長度向 <a href="https://lrclib.net" rel="noopener">lrclib.net</a> 查詢純文字歌詞。該開關預設關閉，只傳送上述幾項中繼資料，不會上傳音訊；查到的歌詞會快取在本機，之後離線也能看。線上歌詞資料由 LRCLIB 提供。</li>
+          <li><b>歌詞發音與翻譯？</b> 發音（假名、拼音等）在本機計算，不需要連網。翻譯需要在「設定 → 歌詞 → AI 歌詞翻譯」自行填寫一個相容的翻譯服務位址；留空時該功能不會發出任何請求。</li>
           <li><b>播放沒有聲音？</b> 檢查是否連接了藍牙裝置，或試聽其它歌曲確認音訊檔案本身是否正常。</li>
         </ul>
       </div>
@@ -149,6 +153,8 @@
           <li><b>Network source will not connect?</b> Make sure the phone and the server are on the same local network, and check the address, username and password.</li>
           <li><b>No artwork?</b> Artwork comes from the image embedded in the music file; if the file has none, nothing is shown.</li>
           <li><b>No lyrics?</b> Put the lyrics file in the same folder as the music file with the same name, using an extension such as lrc, ttml or qrc.</li>
+          <li><b>Can lyrics be fetched automatically?</b> Yes — turn on "Settings → Lyrics → Online Lyrics". Once enabled, only when a track has no embedded lyrics and no lyrics file beside it, the app looks up plain-text lyrics on <a href="https://lrclib.net" rel="noopener">lrclib.net</a> using the title, artist, album and duration. The switch is off by default, only those metadata fields are sent, and no audio is uploaded. Results are cached on your device, so they stay readable offline. Online lyrics data is provided by LRCLIB.</li>
+          <li><b>Lyrics pronunciation and translation?</b> Pronunciation (kana, pinyin and so on) is computed on your device and needs no network. Translation requires you to enter a compatible translation service address in "Settings → Lyrics → AI Lyrics Translation"; left empty, the feature makes no requests at all.</li>
           <li><b>No sound?</b> Check whether a Bluetooth device is connected, or try another song to see whether the audio file itself is fine.</li>
         </ul>
       </div>
@@ -158,6 +164,8 @@
           <li><b>ネットワークソースに接続できない？</b> iPhone とサーバーが同じネットワークにあるか、アドレス・ユーザー名・パスワードをご確認ください。</li>
           <li><b>ジャケットが表示されない？</b> ジャケットは音楽ファイルに埋め込まれた画像を使用します。埋め込みがない場合は表示されません。</li>
           <li><b>歌詞が表示されない？</b> 歌詞ファイルを音楽ファイルと同じフォルダに同じ名前で置いてください。拡張子は lrc、ttml、qrc などです。</li>
+          <li><b>歌詞を自動取得できますか？</b> できます。「設定 → 歌詞 → オンライン歌詞」をオンにしてください。オンにした場合でも、埋め込み歌詞がなく、同じフォルダに歌詞ファイルもない曲に限り、曲名・アーティスト・アルバム・再生時間を使って <a href="https://lrclib.net" rel="noopener">lrclib.net</a> にテキスト歌詞を問い合わせます。このスイッチは初期状態でオフで、送信するのは上記のメタデータのみ、音声はアップロードしません。取得した歌詞は端末内にキャッシュされるため、オフラインでも表示できます。オンライン歌詞のデータは LRCLIB が提供しています。</li>
+          <li><b>歌詞の発音と翻訳は？</b> 発音（かな・ピンインなど）は端末内で計算するため通信は不要です。翻訳は「設定 → 歌詞 → AI 歌詞翻訳」で互換性のある翻訳サービスのアドレスを入力する必要があります。空欄のままでは一切リクエストを送信しません。</li>
           <li><b>音が出ない？</b> Bluetooth 機器に接続していないか確認するか、別の曲を再生してファイル自体を確認してください。</li>
         </ul>
       </div>
@@ -242,9 +250,26 @@
           <tr><td>pupnp</td><td>22.0.4</td><td>BSD-3-Clause</td></tr>
           <tr><td>TagLib</td><td>2.3.2</td><td>MPL-1.1</td></tr>
           <tr><td>utfcpp</td><td>4.2.0</td><td>BSL-1.0</td></tr>
-          <tr><td>SwiftNIO / Atomics / Collections / System</td><td>—</td><td>Apache-2.0</td></tr>
+          <tr><td>Flite（仅 text-to-phoneme）</td><td>2.2</td><td>CMU MIT-style</td></tr>
+          <tr><td>SwiftNIO</td><td>2.99.0</td><td>Apache-2.0</td></tr>
+          <tr><td>Swift Atomics</td><td>1.3.0</td><td>Apache-2.0 (Runtime Library Exception)</td></tr>
+          <tr><td>Swift Collections</td><td>1.4.1</td><td>Apache-2.0 (Runtime Library Exception)</td></tr>
+          <tr><td>Swift System</td><td>1.6.4</td><td>Apache-2.0 (Runtime Library Exception)</td></tr>
         </tbody>
       </table>
+
+      <div data-lang-block="zh-Hans">
+        <p>Flite 仅用于歌词里的<b>英文读音</b>（把英文单词转成音标），只编译其中的 text-to-phoneme 部分：不包含语音包，也不提供语音合成入口。日文与中文的注音不使用 Flite。</p>
+      </div>
+      <div data-lang-block="zh-Hant">
+        <p>Flite 僅用於歌詞中的<b>英文讀音</b>（將英文單字轉為音標），只編譯其中的 text-to-phoneme 部分：不包含語音包，也不提供語音合成入口。日文與中文的注音不使用 Flite。</p>
+      </div>
+      <div data-lang-block="en">
+        <p>Flite is used only to convert <b>English words</b> to IPA for lyric pronunciation; only its text-to-phoneme component is compiled in. No voice data is included and there is no speech synthesis entry point. Japanese and Chinese romanization do not use Flite.</p>
+      </div>
+      <div data-lang-block="ja">
+        <p>Flite は歌詞の<b>英語の読み</b>（英単語を発音記号に変換）にのみ使用しています。text-to-phoneme 部分のみを組み込んでおり、音声データは含まず、音声合成の入口もありません。日本語・中国語の読みには Flite を使用していません。</p>
+      </div>
 
       <div data-lang-block="zh-Hans">
         <p>FFmpeg、libsmb2 与 libnfs 以 GNU 宽通用公共许可证（LGPL）第 2.1 版或更高版本授权。您可以为了调试对这些库的修改而反向工程本应用，范围以 LGPL 第 2.1 版的规定为限。</p>
@@ -298,10 +323,10 @@
         <span data-lang-block="ja">オープンソースライセンス</span>
       </a>
       &nbsp;·&nbsp;
-      <span data-lang-block="zh-Hans">最后更新：2026 年 10 月 9 日</span>
-      <span data-lang-block="zh-Hant">最後更新：2026 年 10 月 9 日</span>
-      <span data-lang-block="en">Last updated: October 9, 2026</span>
-      <span data-lang-block="ja">最終更新：2026 年 10 月 9 日</span>
+      <span data-lang-block="zh-Hans">最后更新：2026 年 10 月 30 日</span>
+      <span data-lang-block="zh-Hant">最後更新：2026 年 10 月 30 日</span>
+      <span data-lang-block="en">Last updated: October 30, 2026</span>
+      <span data-lang-block="ja">最終更新：2026 年 10 月 30 日</span>
     </p>
     <p>© 2026 管日臻 · Otter Player</p>
   </div>
