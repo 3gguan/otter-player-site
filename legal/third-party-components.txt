@@ -146,24 +146,3 @@ SwiftNIO's NOTICE identifies incorporated or derived material from Netty,
 Node.js llhttp, uSHET, FreeBSD, swift-extras Base64, AsyncHTTPClient,
 SwiftCertificates, Swift System, and Swift Package Manager. Its NOTICE and the
 applicable MIT, BSD, and Apache license texts are reproduced below.
-
-Third-party network services (no code distributed)
---------------------------------------------------
-
-LRCLIB — https://lrclib.net
-
-Used only by the optional "Online Lyrics" feature, which is off by default and
-must be enabled by the user. When enabled, and only when a track has neither
-embedded lyrics nor a lyric file in the same folder, the app sends the track's
-title, artist, album and duration over HTTPS and receives plain-text lyrics in
-return. No audio file, artwork, file name, file path, account or device
-identifier is transmitted. No LRCLIB code is bundled with Otter Player; results
-are cached on the device only.
-
-Client registration: LRCLIB developer portal, client-side application.
-Application ID: ty-VoUF_SP0_oktG42JC9BV5Zru_W2GoDwa2K3togtw
-This ID is a public client identifier, not a credential.
-Authorization document: https://lrclib.net/developers/authorizations/ty-VoUF_SP0_oktG42JC9BV5Zru_W2GoDwa2K3togtw
-
-The other optional network feature, AI lyrics translation, contacts only the
-endpoint the user configures; it has no default endpoint.
